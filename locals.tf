@@ -7,8 +7,8 @@ locals {
   }
 
   resource_group_list = {
-    default = "test"
-    dev     = "test"
+    default = "tfcontainerregistry"
+    dev     = "tfcontainerregistry"
   }
 
   location       = lookup(local.region_list, local.env)
