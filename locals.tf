@@ -11,6 +11,6 @@ locals {
     dev     = "test"
   }
 
-  location                          = lookup(local.region_list, local.env)
-  resource_group                    = lookup(local.resource_group_list, local.env)
+  location       = lookup(local.region_list, local.env)
+  resource_group = lookup(local.resource_group_list, local.env)
 }
